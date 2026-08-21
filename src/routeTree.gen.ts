@@ -16,6 +16,8 @@ import { Route as DashboardRouteImport } from './routes/dashboard'
 import { Route as DocumentsRouteImport } from './routes/documents'
 import { Route as LoginRouteImport } from './routes/login'
 import { Route as NewCaseRouteImport } from './routes/new-case'
+import { Route as ProfileRouteImport } from './routes/profile'
+import { Route as SchemesRouteImport } from './routes/schemes'
 import { Route as SignupRouteImport } from './routes/signup'
 import { Route as SourcesRouteImport } from './routes/sources'
 
@@ -54,6 +56,16 @@ const NewCaseRoute = NewCaseRouteImport.update({
   path: '/new-case',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ProfileRoute = ProfileRouteImport.update({
+  id: '/profile',
+  path: '/profile',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SchemesRoute = SchemesRouteImport.update({
+  id: '/schemes',
+  path: '/schemes',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const SignupRoute = SignupRouteImport.update({
   id: '/signup',
   path: '/signup',
@@ -73,6 +85,8 @@ export interface FileRoutesByFullPath {
   '/documents': typeof DocumentsRoute
   '/login': typeof LoginRoute
   '/new-case': typeof NewCaseRoute
+  '/profile': typeof ProfileRoute
+  '/schemes': typeof SchemesRoute
   '/signup': typeof SignupRoute
   '/sources': typeof SourcesRoute
 }
@@ -84,6 +98,8 @@ export interface FileRoutesByTo {
   '/documents': typeof DocumentsRoute
   '/login': typeof LoginRoute
   '/new-case': typeof NewCaseRoute
+  '/profile': typeof ProfileRoute
+  '/schemes': typeof SchemesRoute
   '/signup': typeof SignupRoute
   '/sources': typeof SourcesRoute
 }
@@ -96,6 +112,8 @@ export interface FileRoutesById {
   '/documents': typeof DocumentsRoute
   '/login': typeof LoginRoute
   '/new-case': typeof NewCaseRoute
+  '/profile': typeof ProfileRoute
+  '/schemes': typeof SchemesRoute
   '/signup': typeof SignupRoute
   '/sources': typeof SourcesRoute
 }
@@ -109,6 +127,8 @@ export interface FileRouteTypes {
     | '/documents'
     | '/login'
     | '/new-case'
+    | '/profile'
+    | '/schemes'
     | '/signup'
     | '/sources'
   fileRoutesByTo: FileRoutesByTo
@@ -120,6 +140,8 @@ export interface FileRouteTypes {
     | '/documents'
     | '/login'
     | '/new-case'
+    | '/profile'
+    | '/schemes'
     | '/signup'
     | '/sources'
   id:
@@ -131,6 +153,8 @@ export interface FileRouteTypes {
     | '/documents'
     | '/login'
     | '/new-case'
+    | '/profile'
+    | '/schemes'
     | '/signup'
     | '/sources'
   fileRoutesById: FileRoutesById
@@ -143,6 +167,8 @@ export interface RootRouteChildren {
   DocumentsRoute: typeof DocumentsRoute
   LoginRoute: typeof LoginRoute
   NewCaseRoute: typeof NewCaseRoute
+  ProfileRoute: typeof ProfileRoute
+  SchemesRoute: typeof SchemesRoute
   SignupRoute: typeof SignupRoute
   SourcesRoute: typeof SourcesRoute
 }
@@ -198,6 +224,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof NewCaseRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/profile': {
+      id: '/profile'
+      path: '/profile'
+      fullPath: '/profile'
+      preLoaderRoute: typeof ProfileRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/schemes': {
+      id: '/schemes'
+      path: '/schemes'
+      fullPath: '/schemes'
+      preLoaderRoute: typeof SchemesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/signup': {
       id: '/signup'
       path: '/signup'
@@ -223,6 +263,8 @@ const rootRouteChildren: RootRouteChildren = {
   DocumentsRoute: DocumentsRoute,
   LoginRoute: LoginRoute,
   NewCaseRoute: NewCaseRoute,
+  ProfileRoute: ProfileRoute,
+  SchemesRoute: SchemesRoute,
   SignupRoute: SignupRoute,
   SourcesRoute: SourcesRoute,
 }
