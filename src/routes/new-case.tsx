@@ -32,13 +32,13 @@ export const Route = createFileRoute("/new-case")({
   validateSearch: searchSchema,
   head: () => ({
     meta: [
-      { title: "Start a new case — NagrikAI" },
+      { title: "Start a new case — NyayaSetu" },
       {
         name: "description",
         content:
-          "Describe your civic or legal problem in plain language and NagrikAI will identify the issue and suggest your next step.",
+          "Describe your civic or legal problem in plain language and NyayaSetu will identify the issue and suggest your next step.",
       },
-      { property: "og:title", content: "Start a new case — NagrikAI" },
+      { property: "og:title", content: "Start a new case — NyayaSetu" },
       {
         property: "og:description",
         content: "Describe your problem in plain language and get a source-backed action plan.",

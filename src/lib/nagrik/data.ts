@@ -47,7 +47,7 @@ export const CATEGORY_LABEL: Record<Category, string> = {
 };
 
 export const DISCLAIMER =
-  "Informational assistance only — not legal advice. NagrikAI does not provide legal representation.";
+  "Informational assistance only — not legal advice. NyayaSetu does not provide legal representation.";
 
 export const DEMO_NOTE =
   "DEMO DATA — Replace with verified official source before production.";

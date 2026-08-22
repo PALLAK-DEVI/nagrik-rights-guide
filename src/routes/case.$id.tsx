@@ -51,13 +51,13 @@ import type { CaseAnswer } from "@/lib/nagrik/types";
 export const Route = createFileRoute("/case/$id")({
   head: () => ({
     meta: [
-      { title: "Case workspace — NagrikAI" },
+      { title: "Case workspace — NyayaSetu" },
       {
         name: "description",
         content:
-          "Your case analysis: what NagrikAI understands, what it still needs, the sources used and your recommended next steps.",
+          "Your case analysis: what NyayaSetu understands, what it still needs, the sources used and your recommended next steps.",
       },
-      { property: "og:title", content: "Case workspace — NagrikAI" },
+      { property: "og:title", content: "Case workspace — NyayaSetu" },
       { property: "og:description", content: "Source-backed analysis, confidence and action plan for your case." },
     ],
   }),
@@ -103,7 +103,7 @@ function CasePage() {
           ? suggestRtiStructure(record.description, record.district)
               .questions.map((q, i) => `${i + 1}. ${q}`)
               .join("\n")
-          : f.extra,
+          : (f.extra ?? ""),
     }));
   }, [record, profile]);
 

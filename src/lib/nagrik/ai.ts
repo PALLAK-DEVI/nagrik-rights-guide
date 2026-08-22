@@ -198,7 +198,7 @@ function stepsFor(category: Category): Analysis["action_steps"] {
           id: "s1",
           title: "Identify the correct public authority",
           description:
-            "Confirm which office holds the records before filing. NagrikAI only suggests a likely authority.",
+            "Confirm which office holds the records before filing. NyayaSetu only suggests a likely authority.",
         },
         {
           id: "s2",

@@ -6,11 +6,11 @@ import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "@/components/ui/s
 import { Logo } from "./brand";
 
 const LINKS = [
-  { to: "/", label: "Home", hash: undefined },
+  { to: "/", label: "Home" },
   { to: "/", label: "How it works", hash: "how-it-works" },
-  { to: "/sources", label: "Rights", hash: undefined },
-  { to: "/cases", label: "My Cases", hash: undefined },
-  { to: "/about", label: "About", hash: undefined },
+  { to: "/sources", label: "Rights" },
+  { to: "/cases", label: "My Cases" },
+  { to: "/about", label: "About" },
 ] as const;
 
 export function SiteNav() {
@@ -24,7 +24,7 @@ export function SiteNav() {
             <Link
               key={l.label}
               to={l.to}
-              hash={l.hash}
+              {...("hash" in l ? { hash: l.hash } : {})}
               className="rounded-md px-3 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
             >
               {l.label}
@@ -52,7 +52,7 @@ export function SiteNav() {
                 <Link
                   key={l.label}
                   to={l.to}
-                  hash={l.hash}
+                  {...("hash" in l ? { hash: l.hash } : {})}
                   onClick={() => setOpen(false)}
                   className="rounded-md px-3 py-2.5 text-sm font-medium hover:bg-muted"
                 >
@@ -85,7 +85,7 @@ export function SiteFooter() {
             Understand your rights. Know your next step.
           </p>
           <p className="mt-4 max-w-md text-xs text-muted-foreground">
-            NagrikAI provides informational assistance and does not provide legal representation or
+            NyayaSetu provides informational assistance and does not provide legal representation or
             professional legal advice.
           </p>
         </div>
@@ -118,7 +118,7 @@ export function SiteFooter() {
       </div>
       <div className="border-t border-border py-4">
         <p className="container-page text-xs text-muted-foreground">
-          © {new Date().getFullYear()} NagrikAI · Making India's civic and legal information simple,
+          © {new Date().getFullYear()} NyayaSetu · Making India's civic and legal information simple,
           reliable and actionable.
         </p>
       </div>

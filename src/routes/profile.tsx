@@ -20,9 +20,9 @@ import { useStore } from "@/lib/nagrik/store";
 export const Route = createFileRoute("/profile")({
   head: () => ({
     meta: [
-      { title: "Your profile — NagrikAI" },
+      { title: "Your profile — NyayaSetu" },
       { name: "description", content: "Manage your name, state, district, language preference and privacy." },
-      { property: "og:title", content: "Your profile — NagrikAI" },
+      { property: "og:title", content: "Your profile — NyayaSetu" },
       { property: "og:description", content: "Manage your details, language preference and privacy settings." },
     ],
   }),

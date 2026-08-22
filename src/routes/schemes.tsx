@@ -19,13 +19,13 @@ import { DEMO_SCHEMES, INDIAN_STATES } from "@/lib/nagrik/data";
 export const Route = createFileRoute("/schemes")({
   head: () => ({
     meta: [
-      { title: "Check scheme eligibility — NagrikAI" },
+      { title: "Check scheme eligibility — NyayaSetu" },
       {
         name: "description",
         content:
           "Screen your age, income, state and occupation against indicative government scheme criteria.",
       },
-      { property: "og:title", content: "Check scheme eligibility — NagrikAI" },
+      { property: "og:title", content: "Check scheme eligibility — NyayaSetu" },
       { property: "og:description", content: "Indicative screening against government scheme criteria." },
     ],
   }),

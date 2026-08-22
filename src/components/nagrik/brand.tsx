@@ -1,20 +1,20 @@
 import { Link } from "@tanstack/react-router";
-import { Scale, ShieldCheck } from "lucide-react";
+import { Scale } from "lucide-react";
 import { cn } from "@/lib/utils";
+import logoAsset from "@/assets/nyayasetu-logo.png.asset.json";
 
 export function Logo({ className, invert = false }: { className?: string; invert?: boolean }) {
   return (
     <Link to="/" className={cn("inline-flex items-center gap-2", className)}>
-      <span
-        className={cn(
-          "grid size-8 place-items-center rounded-lg",
-          invert ? "bg-sidebar-primary text-sidebar-primary-foreground" : "bg-primary text-primary-foreground",
-        )}
-      >
-        <ShieldCheck className="size-4.5" aria-hidden />
-      </span>
+      <img
+        src={logoAsset.url}
+        alt="NyayaSetu logo"
+        className="size-9 shrink-0 rounded-lg object-contain"
+        width={36}
+        height={36}
+      />
       <span className={cn("text-lg font-semibold tracking-tight", invert && "text-sidebar-foreground")}>
-        Nagrik<span className="text-primary">AI</span>
+        Nyaya<span className="text-primary">Setu</span>
       </span>
     </Link>
   );
@@ -29,7 +29,7 @@ export function DisclaimerBanner({ className }: { className?: string }) {
       )}
     >
       <Scale className="mt-0.5 size-3.5 shrink-0" aria-hidden />
-      <p>Informational assistance only — not legal advice. NagrikAI does not provide legal representation.</p>
+      <p>Informational assistance only — not legal advice. NyayaSetu does not provide legal representation.</p>
     </div>
   );
 }

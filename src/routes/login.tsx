@@ -12,9 +12,9 @@ import { useStore } from "@/lib/nagrik/store";
 export const Route = createFileRoute("/login")({
   head: () => ({
     meta: [
-      { title: "Log in — NagrikAI" },
-      { name: "description", content: "Log in to NagrikAI to continue your civic and legal cases." },
-      { property: "og:title", content: "Log in — NagrikAI" },
+      { title: "Log in — NyayaSetu" },
+      { name: "description", content: "Log in to NyayaSetu to continue your civic and legal cases." },
+      { property: "og:title", content: "Log in — NyayaSetu" },
       { property: "og:description", content: "Continue your cases, documents and action plans." },
     ],
   }),
@@ -45,7 +45,7 @@ function LoginPage() {
                 toast.error("Please enter your email and password.");
                 return;
               }
-              signIn({ name: profile?.name ?? email.split("@")[0], email, state: profile?.state });
+              signIn({ name: profile?.name ?? email.split("@")[0] ?? email, email, state: profile?.state ?? "" });
               toast.success("Logged in");
               navigate({ to: "/dashboard" });
             }}
@@ -88,7 +88,7 @@ function LoginPage() {
           </form>
 
           <p className="mt-6 text-sm text-muted-foreground">
-            New to NagrikAI?{" "}
+            New to NyayaSetu?{" "}
             <Link to="/signup" className="font-medium text-primary hover:underline">
               Create an account
             </Link>

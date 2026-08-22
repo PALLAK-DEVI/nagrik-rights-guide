@@ -14,12 +14,12 @@ import type { DocumentRecord } from "@/lib/nagrik/types";
 export const Route = createFileRoute("/documents")({
   head: () => ({
     meta: [
-      { title: "My documents — NagrikAI" },
+      { title: "My documents — NyayaSetu" },
       {
         name: "description",
-        content: "View, download and manage the letters and applications NagrikAI generated for you.",
+        content: "View, download and manage the letters and applications NyayaSetu generated for you.",
       },
-      { property: "og:title", content: "My documents — NagrikAI" },
+      { property: "og:title", content: "My documents — NyayaSetu" },
       { property: "og:description", content: "Your generated letters, notices and RTI applications." },
     ],
   }),
