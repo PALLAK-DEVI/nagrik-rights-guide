@@ -103,7 +103,7 @@ function CasePage() {
           ? suggestRtiStructure(record.description, record.district)
               .questions.map((q, i) => `${i + 1}. ${q}`)
               .join("\n")
-          : f.extra,
+          : (f.extra ?? ""),
     }));
   }, [record, profile]);
 

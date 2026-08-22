@@ -45,7 +45,7 @@ function LoginPage() {
                 toast.error("Please enter your email and password.");
                 return;
               }
-              signIn({ name: profile?.name ?? email.split("@")[0], email, state: profile?.state });
+              signIn({ name: profile?.name ?? email.split("@")[0] ?? email, email, state: profile?.state ?? "" });
               toast.success("Logged in");
               navigate({ to: "/dashboard" });
             }}
