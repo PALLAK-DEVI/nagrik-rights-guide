@@ -18,12 +18,12 @@ import { useStore } from "@/lib/nagrik/store";
 export const Route = createFileRoute("/signup")({
   head: () => ({
     meta: [
-      { title: "Create your account — NagrikAI" },
+      { title: "Create your account — NyayaSetu" },
       {
         name: "description",
-        content: "Create a free NagrikAI account to save cases, documents and action plans.",
+        content: "Create a free NyayaSetu account to save cases, documents and action plans.",
       },
-      { property: "og:title", content: "Create your account — NagrikAI" },
+      { property: "og:title", content: "Create your account — NyayaSetu" },
       { property: "og:description", content: "Save your civic cases, documents and action plans." },
     ],
   }),

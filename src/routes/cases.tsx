@@ -10,9 +10,9 @@ import { useStore } from "@/lib/nagrik/store";
 export const Route = createFileRoute("/cases")({
   head: () => ({
     meta: [
-      { title: "My cases — NagrikAI" },
+      { title: "My cases — NyayaSetu" },
       { name: "description", content: "Search and continue your saved civic and legal cases." },
-      { property: "og:title", content: "My cases — NagrikAI" },
+      { property: "og:title", content: "My cases — NyayaSetu" },
       { property: "og:description", content: "Search, filter and continue your civic cases." },
     ],
   }),
@@ -38,7 +38,7 @@ function CasesPage() {
   });
 
   return (
-    <AppShell title="My cases" description="Everything you've asked NagrikAI about">
+    <AppShell title="My cases" description="Everything you've asked NyayaSetu about">
       <div className="mx-auto max-w-5xl space-y-6">
         <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
           <div className="relative flex-1">

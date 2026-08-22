@@ -79,14 +79,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "NagrikAI — Understand your rights. Know your next step." },
+      { title: "NyayaSetu — Understand your rights. Know your next step." },
       {
         name: "description",
         content:
           "AI-powered civic and legal rights navigator for Indian citizens: source-backed explanations, action plans and documents.",
       },
-      { name: "author", content: "NagrikAI" },
-      { property: "og:title", content: "NagrikAI" },
+      { name: "author", content: "NyayaSetu" },
+      { property: "og:title", content: "NyayaSetu" },
       {
         property: "og:description",
         content: "Understand your rights. Know your next step.",

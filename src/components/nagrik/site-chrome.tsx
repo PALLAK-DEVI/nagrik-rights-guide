@@ -85,7 +85,7 @@ export function SiteFooter() {
             Understand your rights. Know your next step.
           </p>
           <p className="mt-4 max-w-md text-xs text-muted-foreground">
-            NagrikAI provides informational assistance and does not provide legal representation or
+            NyayaSetu provides informational assistance and does not provide legal representation or
             professional legal advice.
           </p>
         </div>
@@ -118,7 +118,7 @@ export function SiteFooter() {
       </div>
       <div className="border-t border-border py-4">
         <p className="container-page text-xs text-muted-foreground">
-          © {new Date().getFullYear()} NagrikAI · Making India's civic and legal information simple,
+          © {new Date().getFullYear()} NyayaSetu · Making India's civic and legal information simple,
           reliable and actionable.
         </p>
       </div>

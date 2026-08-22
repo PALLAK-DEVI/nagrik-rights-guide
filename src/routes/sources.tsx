@@ -9,16 +9,16 @@ import type { Category } from "@/lib/nagrik/types";
 export const Route = createFileRoute("/sources")({
   head: () => ({
     meta: [
-      { title: "Verified information sources — NagrikAI" },
+      { title: "Verified information sources — NyayaSetu" },
       {
         name: "description",
         content:
-          "The library of records NagrikAI retrieves from, why each source matters and when it was last updated.",
+          "The library of records NyayaSetu retrieves from, why each source matters and when it was last updated.",
       },
-      { property: "og:title", content: "Verified information sources — NagrikAI" },
+      { property: "og:title", content: "Verified information sources — NyayaSetu" },
       {
         property: "og:description",
-        content: "See the sources behind every NagrikAI answer, with relevance and last-updated dates.",
+        content: "See the sources behind every NyayaSetu answer, with relevance and last-updated dates.",
       },
     ],
   }),
@@ -38,12 +38,12 @@ function SourcesPage() {
   const list = SOURCES.filter((s) => filter === "all" || s.topic === filter);
 
   return (
-    <AppShell title="Sources" description="What NagrikAI's answers are built on">
+    <AppShell title="Sources" description="What NyayaSetu's answers are built on">
       <div className="mx-auto max-w-5xl space-y-6">
         <div>
           <h2 className="text-2xl font-semibold sm:text-3xl">Verified Information Sources</h2>
           <p className="mt-2 max-w-2xl text-muted-foreground">
-            NagrikAI prioritizes official government portals, legislation, regulations and
+            NyayaSetu prioritizes official government portals, legislation, regulations and
             authoritative public documents. Every answer shows which records were used and why.
           </p>
         </div>
@@ -72,7 +72,7 @@ function SourcesPage() {
         <div className="rounded-xl border border-border bg-card p-6">
           <h3 className="font-semibold">Why we use sources</h3>
           <p className="mt-2 text-sm text-muted-foreground">
-            A language model on its own can sound confident and still be wrong. NagrikAI retrieves
+            A language model on its own can sound confident and still be wrong. NyayaSetu retrieves
             records first and answers second, so you can check the basis of every statement. Where a
             real source has not been integrated yet, the record is clearly labelled as demo data and
             must be replaced with a verified official source before production use.

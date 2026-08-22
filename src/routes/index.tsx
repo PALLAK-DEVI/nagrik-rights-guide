@@ -21,13 +21,13 @@ import type { Category } from "@/lib/nagrik/types";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "NagrikAI — Understand your rights. Know your next step." },
+      { title: "NyayaSetu — Understand your rights. Know your next step." },
       {
         name: "description",
         content:
-          "NagrikAI turns complicated Indian government and legal information into a clear explanation, personalized action plan and ready-to-use documents.",
+          "NyayaSetu turns complicated Indian government and legal information into a clear explanation, personalized action plan and ready-to-use documents.",
       },
-      { property: "og:title", content: "NagrikAI — Understand your rights. Know your next step." },
+      { property: "og:title", content: "NyayaSetu — Understand your rights. Know your next step." },
       {
         property: "og:description",
         content:
@@ -111,7 +111,7 @@ function Landing() {
               Your rights shouldn&apos;t require a law degree.
             </h1>
             <p className="mt-5 max-w-xl text-base text-muted-foreground sm:text-lg">
-              NagrikAI turns complicated government and legal information into a clear explanation,
+              NyayaSetu turns complicated government and legal information into a clear explanation,
               personalized action plan, and ready-to-use documents.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
@@ -212,7 +212,7 @@ function Landing() {
       {/* Supported areas */}
       <section className="border-y border-border bg-surface py-16 lg:py-24">
         <div className="container-page">
-          <h2 className="text-3xl font-semibold sm:text-4xl">What NagrikAI covers today</h2>
+          <h2 className="text-3xl font-semibold sm:text-4xl">What NyayaSetu covers today</h2>
           <p className="mt-3 max-w-2xl text-muted-foreground">
             We deliberately focus on four everyday areas instead of pretending to cover every law.
           </p>
@@ -245,7 +245,7 @@ function Landing() {
           <div>
             <h2 className="text-3xl font-semibold sm:text-4xl">AI that shows its work.</h2>
             <p className="mt-3 max-w-xl text-muted-foreground">
-              NagrikAI does not simply generate answers from a language model. Every meaningful
+              NyayaSetu does not simply generate answers from a language model. Every meaningful
               answer is built on retrieved documents, and you can see what was used and why.
             </p>
             <dl className="mt-8 space-y-6">
@@ -263,7 +263,7 @@ function Landing() {
                 {
                   icon: TriangleAlert,
                   t: "Honest about uncertainty",
-                  d: "If information is missing or uncertain, NagrikAI tells you instead of pretending.",
+                  d: "If information is missing or uncertain, NyayaSetu tells you instead of pretending.",
                 },
               ].map((p) => (
                 <div key={p.t} className="flex gap-4">

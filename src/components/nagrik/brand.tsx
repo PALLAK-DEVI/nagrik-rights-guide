@@ -29,7 +29,7 @@ export function DisclaimerBanner({ className }: { className?: string }) {
       )}
     >
       <Scale className="mt-0.5 size-3.5 shrink-0" aria-hidden />
-      <p>Informational assistance only — not legal advice. NagrikAI does not provide legal representation.</p>
+      <p>Informational assistance only — not legal advice. NyayaSetu does not provide legal representation.</p>
     </div>
   );
 }

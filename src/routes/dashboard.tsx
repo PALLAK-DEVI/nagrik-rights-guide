@@ -11,9 +11,9 @@ import type { Category } from "@/lib/nagrik/types";
 export const Route = createFileRoute("/dashboard")({
   head: () => ({
     meta: [
-      { title: "Dashboard — NagrikAI" },
+      { title: "Dashboard — NyayaSetu" },
       { name: "description", content: "Your civic cases, generated documents and next steps in one place." },
-      { property: "og:title", content: "Dashboard — NagrikAI" },
+      { property: "og:title", content: "Dashboard — NyayaSetu" },
       { property: "og:description", content: "Track your civic cases, documents and action plans." },
     ],
   }),
@@ -87,7 +87,7 @@ function Dashboard() {
             ) : cases.length === 0 ? (
               <EmptyState
                 title="No cases yet"
-                description="Describe a problem in your own words and NagrikAI will identify the issue and suggest your next step."
+                description="Describe a problem in your own words and NyayaSetu will identify the issue and suggest your next step."
                 action={
                   <Button asChild>
                     <Link to="/new-case">Start your first case</Link>
